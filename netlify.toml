@@ -3,12 +3,9 @@
   to = "https://www.google.com/search?q=:query"
   status = 301
   force = true
-  query = {path = ":path"}
-  conditions = {Language = ["en"], Country = ["US"], Role = ["admin"]}
 
 [[redirects]]
-  from = "/*"
-  to = "https://jesryltechsupportassessment.netlify.app/"
+  from = "/proxy/*"
+  to = "https://jesryltechsupportassessment.netlify.app/:splat"
   status = 200
   force = true
-  headers = {X-From = "Netlify"}
