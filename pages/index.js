@@ -28,7 +28,7 @@ const Home = () => {
         <p className="text-left">
           Challenge & Solution:
           <br />
-          One issue I encountered was SSH authentication for GitHub, as I initially faced a "Permission denied (publickey)" error. To fix this, I generated a new SSH key, added it to my GitHub account, and successfully established a secure connection.
+          One issue I encountered was SSH authentication for GitHub, as I initially faced a &quot;Permission denied (publickey) error&quot;. To fix this, I generated a new SSH key, added it to my GitHub account, and successfully established a secure connection.
         </p>
 
 
@@ -56,10 +56,10 @@ const Home = () => {
 
         <h3 className="text-lg font-semibold mt-4">📌 5 Favorite Activities</h3>
         <ol className="list-decimal list-inside ml-4 space-y-2">
-          <li><strong>Debug a customer's build using a programming language and framework that you've never seen before</strong> – I enjoy problem-solving and learning new technologies.</li>
+          <li><strong>Debug a customer&apos;s build using a programming language and framework that you&apos;ve never seen before</strong> – I enjoy problem-solving and learning new technologies.</li>
           <li><strong>Develop a code example to share with a customer</strong> – I like creating solutions and helping others understand them.</li>
-          <li><strong>Suggest and champion improvements to the Support team's workflow</strong> – I appreciate finding better ways to improve efficiency.</li>
-          <li><strong>Work with a customer to figure out if Netlify's service can solve a particular workflow or integration challenge they have</strong> – I enjoy helping customers find solutions.</li>
+          <li><strong>Suggest and champion improvements to the Support team&apos;s workflow</strong> – I appreciate finding better ways to improve efficiency.</li>
+          <li><strong>Work with a customer to figure out if Netlify&apos;s service can solve a particular workflow or integration challenge they have</strong> – I enjoy helping customers find solutions.</li>
           <li><strong>Submit bug reports and potentially bug fixes</strong> – I’m detail-oriented and enjoy identifying and resolving issues.</li>
         </ol>
 
@@ -114,7 +114,7 @@ const Home = () => {
         <p className="text-left">
           Subject: Troubleshooting Your Build Failure on Netlify
           <br />
-          Hi [Customer's Name],
+          Hi [Customer&apos;s Name],
           <br />
           I see that your build failed with Exit Code 2, which can happen due to various reasons, such as missing dependencies or incorrect build commands. 
           <br />
