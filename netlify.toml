@@ -2,12 +2,12 @@
   from = "/netlify/:query"
   to = "https://www.google.com/search?q=:query"
   status = 301
-  force = false
+  force = true
   query = {path = ":path"}
   conditions = {Language = ["en"], Country = ["US"], Role = ["admin"]}
 
 [[redirects]]
-  from = "/proxy/*"
+  from = "/*"
   to = "https://jesryltechsupportassessment.netlify.app/"
   status = 200
   force = true
