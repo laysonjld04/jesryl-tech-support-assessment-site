@@ -162,7 +162,7 @@ const Home = () => {
 
         {/* Question Number 8 */}
         <p className="text-left">
-          <strong>8. Please attempt to deploy a function on our service. This need not be complicated. It could be "Hello World". Note that failure to deploy is not failing the exercise! Whether you have trouble or not, please describe what you experienced and how you attempted to troubleshoot any issues you encountered.</strong>
+          <strong>8. Please attempt to deploy a function on our service. This need not be complicated. It could be &quot;Hello World&quot;. Note that failure to deploy is not failing the exercise! Whether you have trouble or not, please describe what you experienced and how you attempted to troubleshoot any issues you encountered.</strong>
           <br />
           (Your answer here)
         </p>
