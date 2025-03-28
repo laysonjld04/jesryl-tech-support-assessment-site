@@ -163,10 +163,34 @@ const Home = () => {
         {/* Question Number 8 */}
         <p className="text-left">
           <strong>8. Please attempt to deploy a function on our service. This need not be complicated. It could be &quot;Hello World&quot;. Note that failure to deploy is not failing the exercise! Whether you have trouble or not, please describe what you experienced and how you attempted to troubleshoot any issues you encountered.</strong>
-          <br />
-          (Your answer here)
         </p>
-
+        <div className="bg-gray-900 text-white p-4 rounded-md text-left font-mono">
+          <p className="text-green-400">1. Created a functions/hello-world.js file</p>
+          <pre className="whitespace-pre-wrap">
+            <code>
+              {`exports.handler = async () => {
+                return {
+                  statusCode: 200,
+                  body: JSON.stringify({ message: "Hello, Netlify Functions!" })
+                };
+              };`}
+            </code>
+          </pre>
+          <p className="mt-4 text-green-400">2. Updated netlify.toml</p>
+          <pre className="whitespace-pre-wrap">
+            <code>
+              {`[functions]
+              directory = "functions"`}
+            </code>
+          </pre>
+          <p className="text-green-400">3. Deployed the site – Netlify automatically detected and deployed the function.</p>
+          <p className="text-green-400">Troubleshooting Notes:
+          I initially encountered an issue where my function didn’t deploy correctly. After reviewing the logs, I discovered two problems:</p>
+          <ul className="list-disc list-inside ml-4">
+            <li>I had forgotten to enable Netlify Functions in the netlify.toml file.</li>
+            <li>In index.js, I needed to replace &quot; with <code>{`&quot;`}</code> for proper encoding.</li>
+          </ul>
+        </div>
 
         {/* Question Number 9 */}
         <p className="text-left">
