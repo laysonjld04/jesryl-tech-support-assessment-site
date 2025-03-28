@@ -5,7 +5,7 @@
   force = true
 
 [[redirects]]
-  from = "/*"
-  to = "/index.html"
+  from = "/proxy/*"
+  to = "https://jesryltechsupportassessment.netlify.app/:splat"
   status = 200
   force = true
