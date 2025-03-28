@@ -144,16 +144,16 @@ const Home = () => {
           <p className="text-gray-400"># Added this to the netlify.toml file:</p>
           <pre className="whitespace-pre-wrap">
             [[redirects]]
-            from = "/netlify/:query"
-            to = "https://www.google.com/search?q=:query"
+            from = &quot;/netlify/:query&quot;
+            to = &quot;https://www.google.com/search?q=:query&quot;
             status = 301
             force = true
           </pre>
             <p className="mt-4 text-green-400"># Proxy Redirect (Directly on the Site)</p>
             <pre className="whitespace-pre-wrap">
             [[redirects]]
-            from = "/proxy/*"
-            to = "https://jesryltechsupportassessment.netlify.app/:splat"
+            from = &quot;/proxy/*&quot;
+            to = &quot;https://jesryltechsupportassessment.netlify.app/:splat&quot;
             status = 200
             force = true
           </pre>
