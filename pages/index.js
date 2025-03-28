@@ -194,10 +194,33 @@ const Home = () => {
 
         {/* Question Number 9 */}
         <p className="text-left">
-          <strong>9. Explain DNS configuration challenges...</strong>
-          <br />
-          (Your answer here)
+          <strong>9. We understand you don't know anything about our internal procedures at this stage, but we want you to explain at a high level how you'd react to this situation: You receive a report of a severe security issue on www.netlify.com. You can't immediately confirm the report, so what steps might you take to investigate or substantiate the report? What might you say to the reporter, even though we haven't confirmed their assertion yet, that will instill confidence that our business is very concerned about security? You believe there is a reasonable chance the report is correct and the problem is very large and impactful. How might you escalate?</strong>
         </p>
+        <p className="text-green-400"><strong>Approach to Handling a Severe Security Report</strong></p>
+        <p className="text-green-400">If a customer reports a severe security vulnerability but I can’t immediately confirm it, I would take the following steps:</p>
+        <p className="mt-4 text-green-400">1. Investigate & Gather Details</p>
+        <ul className="list-disc list-inside ml-4">
+          <li>Request specific steps to reproduce the issue.</li>
+          <li>Review Netlify’s security policies and past reports for similar vulnerabilities.</li>
+          <li>Attempt to replicate the issue in a controlled environment.</li>
+        </ul>
+        <p className="mt-4 text-green-400">2. Respond to the Reporter Professionally</p>
+        <p className="mt-4 text-green-400">Subject: Acknowledgment of Your Security Report
+          <br />
+          Hi [Reporter’s Name],
+          <br />
+          Thank you for bringing this to our attention. Security is our top priority, and we take all reports seriously. While our team is actively investigating, we appreciate any additional details or proof-of-concept you can provide.
+          <br />
+          We will keep you updated as we assess the situation. Please rest assured that we are treating this with urgency.
+          <br />
+          Best regards,
+          <br />
+          Jesryl</p>
+        <p className="mt-4 text-green-400">3. Escalate Internally If the Issue Seems Severe</p>
+        <ul className="list-disc list-inside ml-4">
+          <li>If the report appears valid, escalate it immediately to the security team.</li>
+          <li>If necessary, temporarily disable affected features to mitigate risk.</li>
+        </ul>
       </section>
     </div>
   );
