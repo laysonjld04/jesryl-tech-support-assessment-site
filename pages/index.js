@@ -137,15 +137,32 @@ const Home = () => {
 
         {/* Question Number 7 */}
         <p className="text-left">
-          <strong>7. Explain DNS configuration challenges...</strong>
-          <br />
-          (Your answer here)
+          <strong>7. How would you set up an http 301 status redirect from &quot;/netlify/anything&quot; on your site, to https://www.google.com/search?q=anything. Please provide the redirect formatting here. Now, how about a proxy redirect? Please add that proxy redirect rule directly to your site. (Please add the proxy redirect to your website!)</strong>
         </p>
+        <div className="bg-gray-900 text-white p-4 rounded-md text-left font-mono">
+          <p className="text-green-400"># 301 Redirect (From /netlify/anything to Google Search)</p>
+          <p className="text-gray-400"># Added this to the netlify.toml file:</p>
+          <pre className="whitespace-pre-wrap">
+            [[redirects]]
+            from = "/netlify/:query"
+            to = "https://www.google.com/search?q=:query"
+            status = 301
+            force = true
+          </pre>
+            <p className="mt-4 text-green-400"># Proxy Redirect (Directly on the Site)</p>
+            <pre className="whitespace-pre-wrap">
+            [[redirects]]
+            from = "/proxy/*"
+            to = "https://jesryltechsupportassessment.netlify.app/:splat"
+            status = 200
+            force = true
+          </pre>
+        </div>
 
 
         {/* Question Number 8 */}
         <p className="text-left">
-          <strong>5. Explain DNS configuration challenges...</strong>
+          <strong>8. Please attempt to deploy a function on our service. This need not be complicated. It could be "Hello World". Note that failure to deploy is not failing the exercise! Whether you have trouble or not, please describe what you experienced and how you attempted to troubleshoot any issues you encountered.</strong>
           <br />
           (Your answer here)
         </p>
@@ -153,7 +170,7 @@ const Home = () => {
 
         {/* Question Number 9 */}
         <p className="text-left">
-          <strong>5. Explain DNS configuration challenges...</strong>
+          <strong>9. Explain DNS configuration challenges...</strong>
           <br />
           (Your answer here)
         </p>
