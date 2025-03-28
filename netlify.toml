@@ -9,3 +9,7 @@
   to = "https://jesryltechsupportassessment.netlify.app/:splat"
   status = 200
   force = true
+
+
+[functions]
+  directory = "functions"
